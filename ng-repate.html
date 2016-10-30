@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/global.css" />
+		<style type="text/css">
+			.name{font-size: 13px;}
+		</style>
+	</head>
+	<body ng-app="app" ng-controller="AddressCtrl">
+		<div style="padding: 10px;font-weight: bold;">地址管理</div>
+		<ul class="ui-list ui-list-link ui-list-text ui-list-active ui-border-td">
+			<li ng-repeat=" a in list" class="ui-border-t" ng-class="{'selected':$last}">
+			<!--
+            	<li ng-repeat=" a in list" class="ui-border-t" ng-if="!$last">
+            -->	
+				<h4>{{a.address}}</h4>
+			</li>	
+		</ul>
+	</body>
+	<script type="text/javascript" src="js/angular.min.js" ></script>
+	<script type="text/javascript" src="js/MyStrl6.js" ></script>
+</html>
